@@ -2,7 +2,7 @@ import akka.actor.{ActorSystem, Actor, ActorRef, Props}
 
 class MyAcor extends Actor {
   def receive: Receive = {
-    case msg => println(s"Odebrałem wiadomość: ${msg}")
+    case msg => println(s"Odebrałem wiadomość: \${msg}")
   }
 }
 
