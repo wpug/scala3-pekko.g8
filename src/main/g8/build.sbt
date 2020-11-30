@@ -1,12 +1,11 @@
 name := "hello-akka"
-version := "1.0.0"
+version := "0.0.1"
 
-scalaVersion := "2.13.1"
-
-scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
+scalaVersion := "2.13.4"
+scalacOptions := Seq("-unchecked", "-deprecation", "-explaintypes", "-encoding", "utf8")
 
 libraryDependencies ++= {
-  val akkaV = "2.6.4"
+  val akkaV = "2.6.10"
   Seq(
     "com.typesafe.akka" %% "akka-actor" % akkaV
   )
