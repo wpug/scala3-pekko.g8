@@ -1,6 +1,6 @@
 import akka.actor.{ActorSystem, Actor, ActorRef, Props}
 
-class MyAcor extends Actor {
+class MyActor extends Actor {
   def receive: Receive = {
     case msg => println(s"Odebrałem wiadomość: \${msg}")
   }
@@ -9,7 +9,7 @@ class MyAcor extends Actor {
 object Main extends App {
   val system = ActorSystem("HaloAkka")
   try {
-    val leonardo = system.actorOf(Props[MyActor], "leonardo")
+    val leonardo = system.actorOf(Props[MyActor](), "leonardo")
     leonardo ! "Dostałeś Oskara!"
     println(">>> Naciśnij ENTER żeby zakończyć <<<")
     io.StdIn.readLine()
