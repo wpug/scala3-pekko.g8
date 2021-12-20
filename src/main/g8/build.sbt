@@ -1,5 +1,5 @@
-name := "hello-akka"
-version := "0.0.1"
+name := "$name$"
+version := "1.0.0"
 
 scalaVersion := "3.1.0"
 scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
