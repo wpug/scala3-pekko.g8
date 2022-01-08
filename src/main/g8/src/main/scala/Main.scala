@@ -1,4 +1,4 @@
-object Main {
+object AkkaIntro {
   import akka.actor.{ActorSystem, Actor, ActorRef, Props}
 
   class MyActor extends Actor {
