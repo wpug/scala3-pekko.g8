@@ -7,7 +7,8 @@ object Main {
     }
   }
 
-  def main(args: Array[String]): Unit = {
+  @main
+  def main: Unit = {
     val system = ActorSystem("HaloAkka")
     try {
       val leonardo = system.actorOf(Props[MyActor](), "leonardo")
