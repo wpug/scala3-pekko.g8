@@ -26,6 +26,8 @@ scalacOptions ++= Seq(
 libraryDependencies ++= {
   val akkaV = "2.6.20"
   Seq(
-    "com.typesafe.akka" %% "akka-actor" % akkaV
+    "com.typesafe.akka" %% "akka-actor" % akkaV,
+    "ch.qos.logback" % "logback-classic" % "1.4.5" % Runtime,
+    "com.typesafe.scala-logging" %% "scala-logging" % "3.9.4"
   )
 }
