@@ -1,20 +1,19 @@
 
-import akka.actor.{ActorSystem, Actor, ActorRef, Props}
+import akka.actor.{ActorSystem, Actor, ActorLogging, ActorRef, Props}
 
-class MyActor extends Actor {
+case object Oskar
+
+class MovieStar extends Actor with ActorLogging {
   def receive: Receive = {
-    case msg => println(s"Odebrałem wiadomość: \${msg}")
+    case Oskar =>
+      log.info("Oskar? No i świetnie! Idę na emeryturę!")
+      context.system.terminate()
+    case msg => log.info(s"Odebrałem wiadomość: ${msg}")
   }
 }
 
 @main def main: Unit = {
-  val system = ActorSystem("HaloAkka")
-  try {
-    val leonardo = system.actorOf(Props[MyActor](), "leonardo")
-    leonardo ! "Dostałeś Oskara!"
-    println(">>> Naciśnij ENTER żeby zakończyć <<<")
-    io.StdIn.readLine()
-  } finally {
-    system.terminate()
-  }
+  val system = ActorSystem("Hollywood")
+    val leonardo = system.actorOf(Props[MovieStar](), "leonardo")
+    leonardo ! Oskar
 }
