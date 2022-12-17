@@ -30,3 +30,4 @@ project/boot/
 # Metals and VSCode
 .metals
 .vscode
+.scalafmt.conf
