@@ -16,11 +16,9 @@ scalacOptions ++= Seq(
 )
 
 /*
-
   Currently available compiler options and their meanings can be looked-up in:
 
   https://github.com/lampepfl/dotty/blob/main/compiler/src/dotty/tools/dotc/config/ScalaSettings.scala
-
 */
 
 libraryDependencies ++= {
@@ -28,6 +26,6 @@ libraryDependencies ++= {
   Seq(
     "com.typesafe.akka" %% "akka-actor" % akkaV,
     "ch.qos.logback" % "logback-classic" % "1.4.5" % Runtime,
-    "com.typesafe.scala-logging" %% "scala-logging" % "3.9.4"
+    "com.typesafe.akka" %% "akka-slf4j" % "2.8.0-M1"
   )
 }
