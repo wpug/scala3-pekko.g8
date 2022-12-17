@@ -8,7 +8,7 @@ class MovieStar extends Actor with ActorLogging {
     case Oskar =>
       log.info("Oskar? No i świetnie! Idę na emeryturę!")
       context.system.terminate()
-    case msg => log.info(s"Odebrałem wiadomość: ${msg}")
+    case msg => log.info(s"Odebrałem wiadomość: \${msg}")
   }
 }
 
