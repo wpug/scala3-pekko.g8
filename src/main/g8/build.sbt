@@ -26,6 +26,6 @@ libraryDependencies ++= {
   Seq(
     "com.typesafe.akka" %% "akka-actor" % akkaV,
     "ch.qos.logback" % "logback-classic" % "1.4.5" % Runtime,
-    "com.typesafe.akka" %% "akka-slf4j" % "2.8.0-M1"
+    "com.typesafe.akka" %% "akka-slf4j" % akkaV
   )
 }
