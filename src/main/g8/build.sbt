@@ -25,8 +25,8 @@ libraryDependencies ++= {
   val akkaV = "2.6.20"
   Seq(
     "com.typesafe.akka" %% "akka-actor" % akkaV,
-    "ch.qos.logback" % "logback-classic" % "1.3.7" % Runtime,
-    //"ch.qos.logback" % "logback-classic" % "1.4.5" % Runtime, // for Java ver. >= 11
-    "com.typesafe.akka" %% "akka-slf4j" % akkaV
+    "com.typesafe.akka" %% "akka-slf4j" % akkaV,
+    //"ch.qos.logback" % "logback-classic" % "1.3.8", // for JDK ver. < 11
+    "ch.qos.logback" % "logback-classic" % "1.4.8" // for Java ver. >= 11
   )
 }
