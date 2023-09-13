@@ -1,5 +1,5 @@
-
-import akka.actor.{ActorSystem, Actor, ActorLogging, ActorRef, Props}
+import org.apache.pekko
+import pekko.actor.{ActorSystem, Actor, ActorLogging, ActorRef, Props}
 
 case object Oskar
 
