@@ -12,7 +12,8 @@ class MovieStar extends Actor with ActorLogging {
   }
 }
 
-@main def main: Unit = {
+@main 
+def mainProg: Unit = {
   val system = ActorSystem("Hollywood")
     val leonardo = system.actorOf(Props[MovieStar](), "leonardo")
     leonardo ! Oskar
