@@ -27,6 +27,6 @@ libraryDependencies ++= {
     "org.apache.pekko" %% "pekko-actor" % pekkoV,
     "org.apache.pekko" %% "pekko-slf4j" % pekkoV,
     //"ch.qos.logback" % "logback-classic" % "1.3.8", // for JDK ver. < 11
-    "ch.qos.logback" % "logback-classic" % "1.4.11" // for Java ver. >= 11
+    "ch.qos.logback" % "logback-classic" % "1.4.14" // for Java ver. >= 11
   )
 }
