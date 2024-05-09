@@ -1,3 +1,4 @@
+.ammonite/
 .bloop/
 .bsp/
 .metals/
@@ -6,4 +7,5 @@ project/project/
 project/metals.sbt
 target/
 .DS_Store
+metals.sbt
 
