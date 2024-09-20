@@ -1,7 +1,7 @@
 name := "$name$"
 version := "1.0.0"
 
-scalaVersion := "3.5.0"
+scalaVersion := "3.5.1"
 
 scalacOptions ++= Seq(
    "-deprecation",         // Emit warning and location for usages of deprecated APIs.
@@ -11,7 +11,6 @@ scalacOptions ++= Seq(
    "-unchecked",           // Enable additional warnings where generated code depends on assumptions
    "-Xfatal-warnings",     // Fail the compilation if there are any warnings.
    "-Xmigration",          // Warn about constructs whose behavior may have changed since version.
-   "-source:3.0",
    "-encoding", "utf8",
 )
 
