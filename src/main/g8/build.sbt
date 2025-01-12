@@ -21,11 +21,11 @@ scalacOptions ++= Seq(
 */
 
 libraryDependencies ++= {
-  val pekkoV = "1.1.2"
+  val pekkoV = "1.1.3"
   Seq(
     "org.apache.pekko" %% "pekko-actor" % pekkoV,
     "org.apache.pekko" %% "pekko-slf4j" % pekkoV,
     //"ch.qos.logback" % "logback-classic" % "1.3.8", // for JDK ver. < 11
-    "ch.qos.logback" % "logback-classic" % "1.5.12" // for Java ver. >= 11
+    "ch.qos.logback" % "logback-classic" % "1.5.16" // for Java ver. >= 11
   )
 }
