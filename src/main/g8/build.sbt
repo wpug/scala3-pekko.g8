@@ -10,7 +10,7 @@ scalacOptions ++= Seq(
    "-print-lines",         // Show source code line numbers.
    "-unchecked",           // Enable additional warnings where generated code depends on assumptions
    "-Xfatal-warnings",     // Fail the compilation if there are any warnings.
-   "-source:3.3",
+   "-source:3.7",
    "-encoding", "utf8",
 )
 
