@@ -3,7 +3,7 @@ version := "1.0.0"
 
 scalaVersion := "3.7.3"
 
-scalacOptions ++= Seq(
+Compile / scalacOptions ++= Seq(
    "-deprecation",         // Emit warning and location for usages of deprecated APIs.
    "-explain",             // Explain errors in more detail.
    "-feature",             // Emit warning and location for usages of features that should be imported explicitly.
