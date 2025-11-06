@@ -29,3 +29,8 @@ libraryDependencies ++= {
     "ch.qos.logback" % "logback-classic" % "1.5.19" // for Java ver. >= 11
   )
 }
+
+javaOptions ++= Seq(
+  "--sun-misc-unsafe-memory-access=allow"
+)
+
