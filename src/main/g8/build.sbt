@@ -21,7 +21,7 @@ Compile / scalacOptions ++= Seq(
 */
 
 libraryDependencies ++= {
-  val pekkoV = "1.2.1"
+  val pekkoV = "1.3.0"
   Seq(
     "org.apache.pekko" %% "pekko-actor" % pekkoV,
     "org.apache.pekko" %% "pekko-slf4j" % pekkoV,
