@@ -30,7 +30,6 @@ libraryDependencies ++= {
   )
 }
 
-javaOptions ++= Seq(
-  "--sun-misc-unsafe-memory-access=allow"
-)
+// Option needed for JDK >= 24
+//reStart / javaOptions += "--sun-misc-unsafe-memory-access=allow"
 

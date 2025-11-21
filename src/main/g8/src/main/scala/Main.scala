@@ -1,5 +1,5 @@
 import org.apache.pekko
-import pekko.actor.{ActorSystem, Actor, ActorLogging, ActorRef, Props}
+import pekko.actor.{ActorSystem, Actor, ActorLogging, Props}
 
 case object Oskar
 
