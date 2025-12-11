@@ -26,10 +26,10 @@ libraryDependencies ++= {
     "org.apache.pekko" %% "pekko-actor" % pekkoV,
     "org.apache.pekko" %% "pekko-slf4j" % pekkoV,
     //"ch.qos.logback" % "logback-classic" % "1.3.8", // for JDK ver. < 11
-    "ch.qos.logback" % "logback-classic" % "1.5.21" // for Java ver. >= 11
+    "ch.qos.logback" % "logback-classic" % "1.5.22" // for Java ver. >= 11
   )
 }
 
-// Option needed for JDK >= 24
+// Option needed for JDK >= 24, where “sun.misc.Unsafe” mechanisms were “terminally deprecated”, they will will be removed in JDK 26 (in March2026)
 //reStart / javaOptions += "--sun-misc-unsafe-memory-access=allow"
 
