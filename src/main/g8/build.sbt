@@ -1,5 +1,5 @@
 name := "$name$"
-version := "1.0.0"
+version := "1.0.1"
 
 scalaVersion := "3.7.4"
 
@@ -26,7 +26,7 @@ libraryDependencies ++= {
     "org.apache.pekko" %% "pekko-actor" % pekkoV,
     "org.apache.pekko" %% "pekko-slf4j" % pekkoV,
     //"ch.qos.logback" % "logback-classic" % "1.3.8", // for JDK ver. < 11
-    "ch.qos.logback" % "logback-classic" % "1.5.22" // for Java ver. >= 11
+    "ch.qos.logback" % "logback-classic" % "1.5.23" // for Java ver. >= 11
   )
 }
 
