@@ -7,9 +7,8 @@ Compile / scalacOptions ++= Seq(
    "-deprecation",         // Emit warning and location for usages of deprecated APIs.
    "-explain",             // Explain errors in more detail.
    "-feature",             // Emit warning and location for usages of features that should be imported explicitly.
-   "-print-lines",         // Show source code line numbers.
    "-unchecked",           // Enable additional warnings where generated code depends on assumptions
-   "-Xfatal-warnings",     // Fail the compilation if there are any warnings.
+   "-Werror",              // Fail the compilation if there are any warnings.
    "-source:3.8",
    "-encoding", "utf8",
 )
