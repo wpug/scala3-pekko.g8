@@ -20,7 +20,7 @@ Compile / scalacOptions ++= Seq(
 */
 
 libraryDependencies ++= {
-  val pekkoV = "1.4.0"
+  val pekkoV = "1.5.0"
   val logbackClassicV = "1.5.32"
   Seq(
     "org.apache.pekko" %% "pekko-actor" % pekkoV,
