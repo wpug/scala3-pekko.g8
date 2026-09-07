@@ -1,3 +1,4 @@
-addSbtPlugin("io.spray" % "sbt-revolver" % "0.10.0")
-addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.5.4")
-addSbtPlugin("org.jmotor.sbt" % "sbt-dependency-updates" % "1.2.9")
+addSbtPlugin("com.jamesward" % "sbt-reload" % "0.0.8")
+addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.6.2")
+addSbtPlugin("com.timushev.sbt" % "sbt-updates" % "0.7.0")
+

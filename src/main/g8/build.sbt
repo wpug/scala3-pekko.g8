@@ -1,7 +1,7 @@
 name := "$name$"
 version := "1.0.1"
 
-scalaVersion := "3.8.4"
+scalaVersion := "3.9.0"
 
 Compile / scalacOptions ++= Seq(
    "-deprecation",         // Emit warning and location for usages of deprecated APIs.
@@ -20,8 +20,8 @@ Compile / scalacOptions ++= Seq(
 */
 
 libraryDependencies ++= {
-  val pekkoV = "1.6.0"
-  val logbackClassicV = "1.5.37"
+  val pekkoV = "1.7.0"
+  val logbackClassicV = "1.6.3"
   Seq(
     "org.apache.pekko" %% "pekko-actor" % pekkoV,
     "org.apache.pekko" %% "pekko-slf4j" % pekkoV,
