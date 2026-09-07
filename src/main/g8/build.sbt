@@ -31,5 +31,5 @@ libraryDependencies ++= {
 }
 
 // Option needed for JDK >= 24, where “sun.misc.Unsafe” mechanisms were “terminally deprecated”, they will will be removed in JDK 26 (in March2026)
-//reStart / javaOptions += "--sun-misc-unsafe-memory-access=allow"
+//run / javaOptions += "--sun-misc-unsafe-memory-access=allow"
 
