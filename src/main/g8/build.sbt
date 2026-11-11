@@ -1,5 +1,5 @@
 name := "$name$"
-version := "1.0.1"
+version := "1.1.0"
 
 scalaVersion := "3.9.0"
 
@@ -9,7 +9,7 @@ Compile / scalacOptions ++= Seq(
    "-feature",             // Emit warning and location for usages of features that should be imported explicitly.
    "-unchecked",           // Enable additional warnings where generated code depends on assumptions
    "-Werror",              // Fail the compilation if there are any warnings.
-   "-source:3.8",
+   "-source:3.9",
    "-encoding", "utf8",
 )
 
@@ -20,8 +20,8 @@ Compile / scalacOptions ++= Seq(
 */
 
 libraryDependencies ++= {
-  val pekkoV = "1.7.0"
-  val logbackClassicV = "1.6.3"
+  val pekkoV = "2.0.0"
+  val logbackClassicV = "1.6.6"
   Seq(
     "org.apache.pekko" %% "pekko-actor" % pekkoV,
     "org.apache.pekko" %% "pekko-slf4j" % pekkoV,
